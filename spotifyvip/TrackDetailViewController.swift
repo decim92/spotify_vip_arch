@@ -9,7 +9,15 @@
 import UIKit
 
 class TrackDetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var albumImageView: UIImageView!
+    @IBOutlet weak var trackNameLabel: UILabel!
+    @IBOutlet weak var artistsLabel: UILabel!
+    @IBOutlet weak var albumLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var popularityLabel: UILabel!
+    @IBOutlet weak var explicitLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +28,4 @@ class TrackDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

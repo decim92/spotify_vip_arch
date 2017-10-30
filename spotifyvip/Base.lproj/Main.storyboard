@@ -283,6 +283,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LbZ-5G-H6u"/>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="hVh-Yq-wS9" id="ZtB-d9-s7K"/>
+                        <outlet property="albumLabel" destination="BQf-cu-LBg" id="Id9-0X-LD0"/>
+                        <outlet property="artistsLabel" destination="8ox-zp-nAT" id="DK4-co-Ewu"/>
+                        <outlet property="durationLabel" destination="rUW-Ly-Ymk" id="fJf-z2-89n"/>
+                        <outlet property="explicitLabel" destination="QeL-qB-DiM" id="6Gb-Sp-Rjy"/>
+                        <outlet property="popularityLabel" destination="nO4-VG-ql9" id="LTm-5u-5Sw"/>
+                        <outlet property="trackNameLabel" destination="1g8-ZM-J80" id="MsD-az-lIa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZT-oE-Sfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
