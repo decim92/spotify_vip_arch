@@ -121,6 +121,22 @@ class ListTracksViewController: UIViewController {
             })
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectedIndexpath = tableView.indexPathForSelectedRow {
+            let selectedRow = selectedIndexpath.row
+            tableView.deselectRow(at: selectedIndexpath, animated: false)
+            
+            let destinationViewController = segue.destination as! TrackDetailViewController
+            destinationViewController.albumUrl = tracks[selectedRow].album.imagesUrls.first!
+            destinationViewController.trackName = tracks[selectedRow].name
+            destinationViewController.artists = tracks[selectedRow].artists
+            destinationViewController.albumTitle = tracks[selectedRow].album.name
+            destinationViewController.duration = tracks[selectedRow].duration
+            destinationViewController.popularity = tracks[selectedRow].popularity
+            destinationViewController.explicit = tracks[selectedRow].explicit
+        }
+    }
 }
 
 extension ListTracksViewController: UISearchBarDelegate {
